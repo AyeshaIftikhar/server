@@ -1,0 +1,29 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Pictowin Server",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js --exec babel-node --"
+  },
+  "author": "Ayesha Iftikhar",
+  "license": "ISC",
+  "engines": {
+    "node": "16.17.0"
+  },
+  "dependencies": {
+    "@mollie/api-client": "^3.6.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "g": "^2.0.1",
+    "molli": "^0.0.4",
+    "nodeman": "^1.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
