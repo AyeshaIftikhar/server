@@ -3,10 +3,6 @@ import db from './db/db';
 import bodyParser from 'body-parser';
 import mollieClient from '@mollie/api-client';
 import http from 'http';
-// import ngrok from 'ngrok';
-
-// const http = require('http');
-// const ngrok = require('ngrok');
 
 const mollie = mollieClient(
   { apiKey: 'test_RHmg4uuCq8fWS6vH7dSaGBm4SMuajk' }
@@ -83,9 +79,6 @@ app.get('/api/v1/todos', (req, res) => {
 // port 
 const PORT = process.env.PORT || 8080;
 
-// app.listen(PORT, () => {
-//   console.log(`server running on port ${PORT}`)
-// });
 
 const server = http.createServer((req, res) => {
   res.end('Pictowin Server');
@@ -94,9 +87,4 @@ const server = http.createServer((req, res) => {
 server.listen(PORT, (err) => {
   if (err) return console.log(`Something bad happened: ${err}`);
   console.log(`Node.js server listening on ${PORT}`);
-
-  // ngrok.connect(PORT, function (err, url) {
-  //   console.log(`Node.js local server is publicly-accessible at ${url}`);
-  // });
-
 });

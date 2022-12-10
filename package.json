@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js --exec babel-node --",
+    "start": "nodemon app.js --exec babel-node --",
     "dev": "nodemon app.js --exec babel-node --"
   },
   "author": "Ayesha Iftikhar",
@@ -22,9 +22,7 @@
     "fs": "^0.0.1-security",
     "g": "^2.0.1",
     "molli": "^0.0.4",
-    "nodeman": "^1.1.2"
-  },
-  "devDependencies": {
+    "nodeman": "^1.1.2",
     "nodemon": "^2.0.20"
   }
 }
